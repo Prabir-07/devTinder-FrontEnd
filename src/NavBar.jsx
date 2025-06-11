@@ -8,7 +8,7 @@ const NavBar = () => {
         <img
           src="https://static.vecteezy.com/system/resources/previews/023/986/484/original/tinder-app-logo-tinder-app-logo-transparent-tinder-app-icon-transparent-free-free-png.png"
           alt="DevTinder Logo"
-          className="w-15 h-15 object-contain rounded-xl"
+          className="w-10 h-10 object-contain rounded-xl"
         />
         <span className="text-xl font-bold text-white">DevTinder</span>
       </div>
