@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
@@ -10,7 +11,9 @@ const NavBar = () => {
           alt="DevTinder Logo"
           className="w-10 h-10 object-contain rounded-xl"
         />
-        <span className="text-xl font-bold text-white">DevTinder</span>
+        <Link to="/">
+          <span className="text-xl font-bold text-white">DevTinder</span>
+        </Link>
       </div>
 
       {/* Spacer */}
@@ -36,13 +39,8 @@ const NavBar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow z-10"
           >
-            <li>
-              <a className="justify-between">
-                Profile <span className="badge">New</span>
-              </a>
-            </li>
-            <li><a>Settings</a></li>
-            <li><a>Logout</a></li>
+            <Link to="/profile">Profile</Link>
+            <Link to="/logout">Logout</Link>
           </ul>
         </div>
       </div>

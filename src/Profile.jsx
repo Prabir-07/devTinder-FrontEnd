@@ -1,16 +1,17 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Camera, Edit3, MapPin, Calendar, Mail, User, Code, Heart } from 'lucide-react';
+import { Camera, Edit3, Calendar, Mail, User, Code, Heart } from 'lucide-react';
 import { setUser } from './redux/userSlice';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Profile = () => {
 
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const profileData = useSelector((state) => state.user.user);
-  console.log("PROFILE DATA:", profileData);
 
   useEffect(() => {
     const savedUser = localStorage.getItem('user');
@@ -34,7 +35,7 @@ const Profile = () => {
 
   const handleEditProfile = () => {
     // Future implementation for edit profile
-    console.log("Edit profile functionality to be implemented");
+    navigate("/edit-profile");
   };
 
 
