@@ -32,7 +32,7 @@ const EditProfile = () => {
 
         console.log("Sending payload:", payload); // Debug log
 
-        const res = await axios.patch(
+        const res = await axios.put(
         'http://localhost:3000/profile/edit',
         payload,
         {

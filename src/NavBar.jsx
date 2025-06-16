@@ -40,6 +40,8 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-base-100 p-2 shadow z-10"
           >
             <Link to="/profile">Profile</Link>
+            <Link to="/feed">Feeds</Link>
+            <Link to="/requests">Requests</Link>
             <Link to="/logout">Logout</Link>
           </ul>
         </div>
