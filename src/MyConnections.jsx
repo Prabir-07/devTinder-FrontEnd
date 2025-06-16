@@ -19,9 +19,10 @@ const MyConnections = () => {
                 console.log("Error fetching connections: ", error);
             }
         }
+        
+        fetchConnections();
+        setLoading(false);
 
-      fetchConnections();
-      setLoading(false);
     }, 1000);
   }, []);
 
