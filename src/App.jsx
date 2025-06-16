@@ -8,6 +8,7 @@ import EditProfile from "./EditProfile";
 import Feed from "./Feed";
 import RequestsPage from "./RequestsPage";
 import MyConnections from "./MyConnections";
+import LandingPage from "./LandingPage";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <BrowserRouter basename="/">
       <Routes>
         <Route path = "/" element={<Body/>}>
+          <Route index element={<LandingPage/>}/>
           <Route path="/feed" element={<Feed/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/profile" element={<Profile/>}/>
