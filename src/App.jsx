@@ -7,6 +7,7 @@ import Logout from "./Logout";
 import EditProfile from "./EditProfile";
 import Feed from "./Feed";
 import RequestsPage from "./RequestsPage";
+import MyConnections from "./MyConnections";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/logout" element={<Logout/>}/>
           <Route path="/edit-profile" element={<EditProfile/>}/>
           <Route path="/requests" element={<RequestsPage/>}/>
+          <Route path="/connections" element={<MyConnections/>}/>
 
         </Route>
       </Routes>
