@@ -51,8 +51,7 @@ const Profile = () => {
             <div className="relative group self-center">
               <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden transition-all duration-300">
                 <img
-                  // src = {profileData.photoUrl}
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISuukVSb_iHDfPAaDKboFWXZVloJW9XXiwGYFab-QwlAYQ3zFsx4fToY9ijcVNU5ieKk&usqp=CAU"
+                  src = {profileData.photoUrl}
                   alt="Profile"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
