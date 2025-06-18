@@ -13,7 +13,6 @@ const Feed = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                // Remove the setTimeout - it's unnecessary and causes confusion
                 const res = await axios.get("http://localhost:3000/feed", {withCredentials: true});
                 console.log(res.data);
                 setAllUsers(res.data);
@@ -22,7 +21,6 @@ const Feed = () => {
                 console.error('Error fetching users:', error);
             }
             finally {
-                // Always set loading to false whether success or error
                 setLoading(false);
             }
         }
